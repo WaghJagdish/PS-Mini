@@ -1,0 +1,10 @@
+{
+  "n_estimators": 200,
+  "max_depth": null,
+  "min_samples_split": 2,
+  "min_samples_leaf": 1,
+  "random_state": 42,
+  "test_size": 0.2,
+  "primary_metric": "f1",
+  "tie_breaker_metric": "accuracy"
+}

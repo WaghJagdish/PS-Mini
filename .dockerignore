@@ -1,0 +1,14 @@
+.git
+.venv
+__pycache__
+.pytest_cache
+tests
+Jenkinsfile
+README.md
+artifacts/*.json
+artifacts/*.joblib
+!artifacts/candidate.joblib
+frontend/node_modules
+frontend/dist
+!artifacts/candidate_metrics.json
+!artifacts/decision.json
