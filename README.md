@@ -1,10 +1,10 @@
-# ModelOps: Automated ML Retraining & Conditional Docker Deployment
+# ModelOps: Automated ML Retraining & Conditional Docker Deployment.
 
 **Professional Skills Development / DevOps mini-project** using Git, GitHub, Jenkins, Docker, scikit-learn, FastAPI, React/Vite and pytest.
 
 > **Educational demonstration only.** The Breast Cancer Wisconsin dataset and resulting classifier are not intended for clinical decisions, screening, diagnosis or treatment. The UI's predictions are software-demo outputs only.
 
-## Features
+## Features 
 
 - React dashboard with Accuracy, F1, Precision and Recall from the packaged model metrics.
 - 30-feature prediction form with a sample-row loader.
@@ -16,7 +16,7 @@
 - Candidate image is health-checked before deployment. Deployment failures attempt to restore the previous container.
 - Only after successful deployment does Jenkins promote the candidate model and metrics to persistent state under `$JENKINS_HOME/ml-devops-state`.
 
-## Architecture
+## Architecture(system design)
 
 ```text
 GitHub push / webhook
