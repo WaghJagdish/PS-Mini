@@ -5,13 +5,16 @@ pipeline {
         disableConcurrentBuilds()
         buildDiscarder(logRotator(numToKeepStr: '15'))
     }
+
     environment {
+        PATH+DOCKER = '/Users/jagdishwagh/.docker/bin:/Applications/Docker.app/Contents/Resources/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin'
         PYTHONUNBUFFERED = '1'
         STATE_DIR = "${env.JENKINS_HOME}/ml-devops-state"
         APP_CONTAINER = 'breast-cancer-api'
         APP_IMAGE = 'breast-cancer-api'
         APP_PORT = '8000'
     }
+
     stages {
         stage('Checkout') {
             steps { checkout scm }
